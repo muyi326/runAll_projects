@@ -43,7 +43,6 @@ force_clean_environment() {
   log "🔧 初始化系统环境..."
   close_all_terminals
   pkill -f "Terminal" || true
-  pkill -x "QuickQ For Mac" || true
 }
 
 close_all_terminals() {
