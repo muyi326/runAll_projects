@@ -12,12 +12,11 @@ VERSION="2.2.3"
 LOG_DIR="${HOME}/.runall_logs"
 
 # 项目配置
-PROJECT_NAMES=("rl-swarm" "wai-run" "nexus-node" "quickq")
+PROJECT_NAMES=("rl-swarm" "wai-run" "nexus-node")
 PROJECT_CMDS=(
   "bash <(curl -fsSL https://gist.githubusercontent.com/muyi326/fa9f15d54e315cf64dc48b8e802b184c/raw/e66cbccc57338a185b4c5960dac99ad0df5b88c9/auto_n.sh)"
   "wai run"
    "bash <(curl -fsSL https://gist.githubusercontent.com/muyi326/197b7ac663e588433e6446a7055cb7b9/raw/53ef6da8d74b6224e308b856528ebacf0186f821/auto_exus.sh)"
-  "~/shell/quickq_auto.sh"
 )
 
 # ==================== 主逻辑 ====================
@@ -185,7 +184,7 @@ arrange_windows() {
   set_window_geometry "docker" $((width/2)) 0 ${width} $((height/2))
   set_window_geometry "wai-run" 0 $((height/2)) $((width/3)) ${height}
   set_window_geometry "nexus-node" $((width/3)) $((height/2)) $((width*2/3)) ${height}
-  set_window_geometry "quickq" $((width*2/3)) $((height/2)) ${width} ${height}
+ 
 }
 
 get_screen_geometry() {
